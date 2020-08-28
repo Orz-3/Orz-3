@@ -1,0 +1,15 @@
+[Script]
+#爱奇艺Cookie
+http-request https?:\/\/.*\.iqiyi\.com\/.*authcookie= script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+#贴吧Cookie
+http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+#WPS
+http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+
+#DiDi
+http-request ^https:\/\/bosp-api\.xiaojukeji\.com\/wechat\/benefit\/public\/index\? script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_ticket.js
+
+[MITM]
+hostname = *.iqiyi.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com
