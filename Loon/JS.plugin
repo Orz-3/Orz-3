@@ -24,4 +24,4 @@ http-request https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php sc
 http-response https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 
 [MITM]
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.gamer.com.tw
+hostname =  api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.gamer.com.tw
