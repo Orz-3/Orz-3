@@ -1,0 +1,3 @@
+[MITM]
+
+hostname = *.tiktokv.com, api.21jingji.com, www.google.cn, sf*ttcdn-tos.pstatp.com
