@@ -1,5 +1,5 @@
-#!name= BiliBili
-#!desc= Remove BiliBili Ads (BiliBili Version:6.2.1)
+#!name= JS
+#!desc= Weibo，Wechat，BiliBili Ads
 #!system=ios
 
 [Rule]
