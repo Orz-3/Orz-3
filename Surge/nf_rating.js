@@ -1,7 +1,6 @@
 /*
 修改自yichahucha大佬
  */
-
 const $tool = new Tool()
 const consoleLog = false;
 const imdbApikeyCacheKey = "ImdbApikeyCacheKey";
@@ -150,6 +149,32 @@ function updateIMDbApikey() {
     $tool.write(IMDbApikey, imdbApikeyCacheKey);
 }
 
+function get_IMDb_message(data) {
+    let rating_message = "";
+    let tomatoes_message = "";
+    let country_message = "";
+    let ratings = data.Ratings;
+    if (ratings.length > 0) {
+        const imdb_source = ratings[0]["Source"];
+        if (imdb_source == "Internet Movie Database") {
+            const imdb_votes = data.imdbVotes;
+            const imdb_rating = ratings[0]["Value"];
+            rating_message = "";
+            if (data.Type == "movie") {
+                if (ratings.length > 1) {
+                    const source = ratings[1]["Source"];
+                    if (source == "Rotten Tomatoes") {
+                        const tomatoes = ratings[1]["Value"];
+                        tomatoes_message = "";
+                    }
+                }
+            }
+        }
+    }
+    country_message = get_country_message(data.Country);
+    return { rating: rating_message, tomatoes: tomatoes_message, country: country_message }
+}
+
 function get_douban_rating_message(data) {
     const average = data.rating.average;
     const numRaters = data.rating.numRaters;
@@ -168,9 +193,30 @@ function get_country_message(data) {
 }
 
 function errorTip() {
-    return { noData: "★ N/A", error: "◆ N/A" }
+    return { noData: "★ N/A", error: "☆ N/A" }
 }
 
+function IMDbApikeys() {
+    const apikeys = [
+        "f75e0253", "d8bb2d6b",
+        "ae64ce8d", "7218d678",
+        "b2650e38", "8c4a29ab",
+        "9bd135c2", "953dbabe",
+        "1a66ef12", "3e7ea721",
+        "457fc4ff", "d2131426",
+        "9cc1a9b7", "e53c2c11",
+        "f6dfce0e", "b9db622f",
+        "e6bde2b9", "d324dbab",
+        "d7904fa3", "aeaf88b9",
+        "4e89234e",];
+    return apikeys;
+}
+
+function countryEmoji(name) {
+    const emojiMap = {
+    }
+    return emojiMap[name] ? emojiMap[name] : emojiMap["Chequered"];
+}
 
 function Tool() {
     _node = (() => {
