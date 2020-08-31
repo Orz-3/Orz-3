@@ -153,7 +153,7 @@ function updateIMDbApikey() {
 function get_douban_rating_message(data) {
     const average = data.rating.average;
     const numRaters = data.rating.numRaters;
-    const rating_message = `Douban:  ★ ${average.length > 0 ? average + "/10" : "N/A"}   ${numRaters == 0 ? "" : parseFloat(numRaters).toLocaleString()}`;
+    const rating_message = `豆瓣:  ★ ${average.length > 0 ? average + "/10" : "N/A"}   ${numRaters == 0 ? "" : parseFloat(numRaters).toLocaleString()}`;
     return rating_message;
 }
 
