@@ -4,7 +4,7 @@
 
 [Script]
 
-爱奇艺Cookie = type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+爱奇艺获取Cookie = type=http-request,pattern=^https:\/\/iface\d\.iqiyi\.com\/.+?psp_cki=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 贴吧Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
@@ -13,4 +13,4 @@ WPSCookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in
 滴滴出行Cookie = type=http-request ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
 
 [MITM]
-hostname = %APPEND% *.iqiyi.com, www.52pojie.cn, api.m.jd.com, passport.biligame.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com
+hostname = %APPEND% iface?.iqiyi.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com
