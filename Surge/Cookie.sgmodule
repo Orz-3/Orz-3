@@ -12,5 +12,14 @@ WPSCookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in
 
 滴滴出行Cookie = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
 
+10010Cookie = type=http-request,pattern=^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+10010Cookie = type=http-request,pattern=^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+10010Cookie = type=http-request,pattern=^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+
+美团Cookie = type=http-request,^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
+
+美团外卖Cookie = type=http-request,^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js
+美团外卖Cookie = type=http-request,^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js,requires-body=true
+
 [MITM]
-hostname = %APPEND% iface?.iqiyi.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com
+hostname = %APPEND% iface?.iqiyi.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com, act.10010.com, m.client.10010.com, i.meituan.com, promotion.waimai.meituan.com, 
