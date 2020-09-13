@@ -1,4 +1,5 @@
 /**
+* by KleinerSource
 * @fileoverview Example to compose response for rewrite of script-echo-response.
 *
 * $request.url, $notify(title, subtitle, message), console.log(message), $done(response)
