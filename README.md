@@ -1,8 +1,7 @@
 [![Orz-3's github stats](https://github-readme-stats.vercel.app/api?username=Orz-3&show_icons=true)](https://github.com/Orz-3)
 
 <!--
-### Hi there 👋
-**Orz-3M/Orz-3** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
 
 Here are some ideas to get you started:
 
