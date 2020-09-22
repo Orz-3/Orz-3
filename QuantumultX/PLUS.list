@@ -1,3 +1,4 @@
-DOMAIN-SUFFIX,emby.agwa.page,plus
-DOMAIN-SUFFIX,emby.xeton.dev,plus
-DOMAIN-SUFFIX,movie.xeton.dev,plus
+DOMAIN-SUFFIX,emby.agwa.page,PLUS
+DOMAIN-SUFFIX,emby.xeton.dev,PLUS
+DOMAIN-SUFFIX,movie.xeton.dev,PLUS
+IP-CIDR,14.116.196.133/32,PLUS
