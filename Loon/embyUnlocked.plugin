@@ -1,5 +1,0 @@
-[Script]
-http-response ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Orz-3/Orz-3/master/Surge/embycrack.js,tag=embyUnlocked
-
-[MITM]
-hostname = mb3admin.com
