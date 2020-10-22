@@ -1,10 +1,8 @@
 #!name=Cookie
-#!desc=爱奇艺, 贴吧，WPS，滴滴出行，联通获取Cookie
+#!desc=贴吧，WPS，滴滴出行，联通获取Cookie
 #!system=ios
 
 [Script]
-
-爱奇艺Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 贴吧Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
@@ -17,4 +15,4 @@ WPSCookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in
 联通Cookie = type=http-request,pattern=^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
 
 [MITM]
-hostname = %APPEND% m.client.10010.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com, act.10010.com, ifac*.iqiyi.com
+hostname = %APPEND% m.client.10010.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com, act.10010.com
