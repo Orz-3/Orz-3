@@ -4,9 +4,6 @@ http-request ^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.h
 http-request ^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
 http-request ^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
 
-#爱奇艺Cookie
-http-request ^https?:\/\/iface(\d)?\.iqiyi\.com\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
 #贴吧Cookie
 http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
@@ -17,4 +14,4 @@ http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-pa
 http-request ^https:\/\/bosp-api\.xiaojukeji\.com\/wechat\/benefit\/public\/index\? script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_ticket.js
 
 [MITM]
-hostname = act.10010.com, m.client.10010.com, ifac*.iqiyi.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com
+hostname = act.10010.com, m.client.10010.com, c.tieba.baidu.com, zt.wps.cn, as.xiaojukeji.com
