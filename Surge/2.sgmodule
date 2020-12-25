@@ -20,15 +20,7 @@
 ^(http|https):\/\/(www.)?ntfsformac\.cn\/ https://china.paragon-software.com/home-mac/ntfs-for-mac/ 302
 ^(http|https):\/\/(www.)?overturechina\.com\/ https://sonicscores.com/ 302
 ^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
-^(http|https):\/\/(www.)?passwordrecovery\.cn\/ https://cn.elcomsoft.com/aopr.html 302
-^(http|https):\/\/(www.)?pdfexpert\.cc\/ https://pdfexpert.com/zh 302
-^(http|https):\/\/(www.)?photozoomchina\.com\/ https://www.benvista.com/ 302
-^(http|https):\/\/(www.)?shankejingling\.com\/ https://www.sothink.com/product/flashdecompiler/
-^(http|https):\/\/cn\.ultraiso\.net\/ $1://$2.ezbsystems.com/ultraiso/ 302
-^(http|https):\/\/(www.)?vegaschina\.cn\/ https://www.vegascreativesoftware.com/ 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
-^(http|https):\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/zh/xshell/ 302
-^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
-^(http|https):\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
+
 [MITM]
 hostname = %APPEND% *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
