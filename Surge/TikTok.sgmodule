@@ -78,4 +78,4 @@
 ^(http|https):\/\/api\.abema\.io\/v\d\/ip\/check _ reject
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com,*.byteoversea.com,www.google.cn,api.abema.io,prom.mobile.gome.com.cn,y.gtimg.cn,du.hupucdn.com,*.xzcs3zlph.com,*.tik-tokapi.com,interfac*.music.163.com,yxyapi2.drcuiyutao.com,api.vistopia.com.cn,capis-clb.didapinche.com,api.jxedt.com,mi.gdt.qq.com,richmanapi.jxedt.com,nfmovies.com,app-api.smzdm.com,emdcadvertise.eastmoney.com,101.201.175.228,182.92.251.11
+hostname = %APPEND% *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
