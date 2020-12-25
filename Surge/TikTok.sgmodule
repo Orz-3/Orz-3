@@ -3,7 +3,7 @@
 #!system=ios
 
 [URL Rewrite]
-(?<=_region=)CN(?=&) KR 307
+(?<=_region=)CN(?=&) JP 307
 (?<=&mcc_mnc=)4 2 307
 ^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 
