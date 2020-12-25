@@ -1,0 +1,34 @@
+#!name=TikTok 1
+#!desc=part1
+#!system=ios
+
+[URL Rewrite]
+#tiktok解锁直播区域限制
+(?<=_region=)CN(?=&) KR 307
+(?<=&mcc_mnc=)4 2 307
+
+^(http|https):\/\/(www.)?logoshejishi\.com https://www.sothink.com/product/logo-design-software/ 302
+^(http|https):\/\/logoshejishi\.mairuan\.com\/ https://www.sothink.com/product/logo-design-software/ 302
+^(http|https):\/\/(www.)?luping\.net\.cn\/ https://www.techsmith.com/ 302
+^(http|https):\/\/(www.)?mathtype\.cn\/ https://www.dessci.com/ 302
+^(http|https):\/\/(www.)(imatype)(.+) $1$3 302
+^(http|https):\/\/(www.)?mindmanager\.(cc|cn)\/ https://www.mindjet.com/cn/ 302
+^(http|https):\/\/(www.)?mindmapper\.cc\/ https://www.mindmapper.com/ 302
+^(http|https):\/\/(www.)?(mycleanmymac|xitongqingli)\.com\/ https://macpaw.com/ 302
+^(http|https):\/\/(www.)?nicelabel\.cc\/ https://www.nicelabel.com/zh/ 302
+^(http|https):\/\/(www.)?ntfsformac\.cc\/ $1://$2.tuxera.com/products/tuxera-ntfs-for-mac-cn/ 302
+^(http|https):\/\/(www.)?ntfsformac\.cn\/ https://china.paragon-software.com/home-mac/ntfs-for-mac/ 302
+^(http|https):\/\/(www.)?overturechina\.com\/ https://sonicscores.com/ 302
+^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+^(http|https):\/\/(www.)?passwordrecovery\.cn\/ https://cn.elcomsoft.com/aopr.html 302
+^(http|https):\/\/(www.)?pdfexpert\.cc\/ https://pdfexpert.com/zh 302
+^(http|https):\/\/(www.)?photozoomchina\.com\/ https://www.benvista.com/ 302
+^(http|https):\/\/(www.)?shankejingling\.com\/ https://www.sothink.com/product/flashdecompiler/
+^(http|https):\/\/cn\.ultraiso\.net\/ $1://$2.ezbsystems.com/ultraiso/ 302
+^(http|https):\/\/(www.)?vegaschina\.cn\/ https://www.vegascreativesoftware.com/ 302
+(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
+^(http|https):\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/zh/xshell/ 302
+^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
+^(http|https):\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
+[MITM]
+hostname = %APPEND% *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
