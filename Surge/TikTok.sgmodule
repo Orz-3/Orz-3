@@ -3,6 +3,17 @@
 (?<=_region=)CN(?=&) KR 307
 (?<=&mcc_mnc=)4 2 307
 
+# Redirect HTTP to HTTPS
+^(http|https):\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
+^(http|https):\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+^(http|https):\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
+^(http|https):\/\/you\.163\.com\/ https://you.163.com/ 302
+^(http|https):\/\/(www.)?suning\.com\/ https://suning.com/ 302
+^(http|https):\/\/(www.)?yhd\.com\/ https://yhd.com/ 302
+
+# Redirect False to True
+^(http|https):\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
+
 # > Fake Website Made By C&J Marketing
 ^(http|https):\/\/(www.)?abbyychina\.com\/ https://www.abbyy.cn/ 302
 ^(http|https):\/\/(www.)?bartender\.cc\/ https://www.macbartender.com/ 302
