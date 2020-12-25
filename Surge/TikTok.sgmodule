@@ -1,7 +1,13 @@
+#油管搜索：Happy白嫖
 [URL Rewrite]
 #tiktok解锁直播区域限制
 (?<=_region=)CN(?=&) KR 307
 (?<=&mcc_mnc=)4 2 307
+
+# Redirect Google Search Service
+^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
+# Redirect Google Maps Service
+^(http|https):\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 # Redirect HTTP to HTTPS
 ^(http|https):\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
@@ -10,6 +16,9 @@
 ^(http|https):\/\/you\.163\.com\/ https://you.163.com/ 302
 ^(http|https):\/\/(www.)?suning\.com\/ https://suning.com/ 302
 ^(http|https):\/\/(www.)?yhd\.com\/ https://yhd.com/ 302
+
+# Weibo Short URL
+^http:\/\/t\.cn https://sinaurl.cn 302
 
 # Redirect False to True
 ^(http|https):\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
@@ -65,3 +74,8 @@
 ^(http|https):\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/zh/xshell/ 302
 ^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^(http|https):\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
+# AbeamTV
+^(http|https):\/\/api\.abema\.io\/v\d\/ip\/check _ reject
+
+[MITM]
+hostname = %APPEND% *.tiktokv.com,*.byteoversea.com,www.google.cn,api.abema.io,prom.mobile.gome.com.cn,y.gtimg.cn,du.hupucdn.com,*.xzcs3zlph.com,*.tik-tokapi.com,interfac*.music.163.com,yxyapi2.drcuiyutao.com,api.vistopia.com.cn,capis-clb.didapinche.com,api.jxedt.com,mi.gdt.qq.com,richmanapi.jxedt.com,nfmovies.com,app-api.smzdm.com,emdcadvertise.eastmoney.com,101.201.175.228,182.92.251.11
