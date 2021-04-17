@@ -1,0 +1,21 @@
+[Rule]
+USER-AGENT,TikTok*
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tik-tokapi.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-KEYWORD,-tiktokcdn-com
+
+[URL Rewrite]
+
+(?<=_region=)CN(?=&) JP 307
+(?<=&mcc_mnc=)4 2 307
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+
+[MITM]
+hostname = *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
