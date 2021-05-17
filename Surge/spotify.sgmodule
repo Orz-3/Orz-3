@@ -1,0 +1,9 @@
+#!name=Spotify
+#!desc=No ad interruptions, enjoy nonstop music.
+#!system=ios
+
+[URL Rewrite]
+^https://spclient\.wg\.spotify\.com/ad-logic|ads/ - reject
+
+[MITM]
+hostname = %APPEND% spclient.wg.spotify.com
