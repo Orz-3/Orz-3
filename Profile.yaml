@@ -1,0 +1,39 @@
+mixed-port: 7890
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+hosts:
+  'mtalk.google.com' : 108.177.125.188
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 1.0.0.1
+    - 119.29.29.29
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*.*.*'
+    - 'lens.l.google.com'
+    - '*.n.n.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - 'xbox.*.*.microsoft.com'
+    - '*.*.xboxlive.com'
+    - '*.msftncsi.com'
+    - '*.msftconnecttest.com'
+    - '*.mcdn.bilivideo.cn'
+    - 'WORKGROUP'
+  nameserver:
+    - 119.29.29.29
+    - 180.184.1.1
+  nameserver-policy:
+    # > Google Dl
+    'dl.google.com': 119.29.29.29
+    'dl.l.google.com': 119.29.29.29
+    'update.googleapis.com': 119.29.29.29
+    # > PlayStation
+    '*.dl.playstation.net': 119.29.29.29
